@@ -13,6 +13,18 @@
             text-align: center;
         }
 
+        table, th , tr , td
+        {
+            border: 1px solid red;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th
+        {
+            color: white;
+            background-color: orangered
+        }
 
     </style>
 </head>
@@ -22,14 +34,14 @@
 
         <table>
             <tr>
-                <td>Dia da semana</td>
-                <td>Turma</td>
-                <td>aula 1</td>
-                <td>aula 2</td>
-                <td>aula 3</td>
-                <td>aula 4</td>
-                <td>aula 5</td>
-                <td>aula 6</td>
+                <th>Dia da semana</th>
+                <th>Turma</th>
+                <th>aula 1</th>
+                <th>aula 2</th>
+                <th>aula 3</th>
+                <th>aula 4</th>
+                <th>aula 5</th>
+                <th>aula 6</th>
             </tr>
 
             <tr>   
@@ -38,13 +50,89 @@
                 <td colspan="2">IW</td>
                 <td>EACNT</td>
                 <td>AD/APW</td>
-                <td>Fisisca</td>
+                <td>Fisica</td>
                 <td>AD/PA</td>
             </tr>
 
             <tr>
                 <td>Terça</td>
+                <td>A/B</td>
+                <td>Português</td>
+                <td colspan="2">PE</td>
+                <td>Fisica</td>
+                <td colspan="2">Ingles</td>
+
+            </tr>
+
+            <tr>
+                <td>Quarta</td>
+                <td>A/B</td>
+                <td colspan="2">Português</td>
+                <td colspan="2">FI/PA</td>
+                <td colspan="2">PA/FI</td>
+            </tr>
+        </table>
+
+        <h3>Exercicio de rowspan e colspan</h3>
+        
+        <table>
+            <tr>
+                <th>Dia da semana</th>
+                <th>Turma</th>
+                <th>aula 1</th>
+                <th>aula 2</th>
+                <th>aula 3</th>
+                <th>aula 4</th>
+                <th>aula 5</th>
+                <th>aula 6</th>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Domingo</td>
+                <td>A</td>
                 <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="2">Segunda</td>
+                <td>A</td>
+                <td colspan="2">Guilherme</td>
+                <td>Vagner</td>
+                <td>Rafael</td>
+                <td rowspan="2">Vegner</td>
+                <td>Rafael</td>
+            </tr>
+
+            <tr>
+                <td>B</td>
+                <td colspan="2">Andricson</td>
+                <td>Janete</td>
+                <td>Ronaldo</td>
+                <td>Andricson</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Terça</td>
+                <td>A</td>
+                <td rowspan="2">Isabela</td>
+                <td rowspan="2" colspan="2">Jaqueline</td>
+                <td rowspan="2">Vagner</td>
+                <td rowspan="2" colspan="2">Celene</td>
+            </tr>
+
+            <tr>
+                <td>B</td>
             </tr>
         </table>
 </body>
